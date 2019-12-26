@@ -4,38 +4,34 @@ import QtQuick.Layouts 1.3
 
 ApplicationWindow {
     visible: true
-    width: 800
-    height: 600
+    width: 400
+    height: 480
 
-    title: qsTr('Column Layouts')
+    ColumnLayout {
+        width: 280
+        height: 280
+        anchors.centerIn: parent
+        spacing: 0
 
-    Rectangle {
-        width: parent.width
-        height: parent.height
+        Rectangle {
+            Layout.fillWidth: true
+            height: 96
+            color: "darkgrey"
+        }
 
-        ColumnLayout {
-            width: parent.width
-            spacing: 0
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            color: "#4a414c"
 
-            Rectangle {
-                Layout.fillWidth: true
-                Layout.preferredHeight: 240
-                color: "dodgerblue"
+            Image {
+                sourceSize: Qt.size(parent.width, parent.height)
+                source: "../Images/time-2980690_1920.jpg"
             }
 
-            Rectangle {
-                Layout.fillWidth: true
-                Layout.preferredHeight: 240
-                color: "pink"
-            }
-
-            Rectangle {
-                Layout.fillWidth: true
-                Layout.preferredHeight: 240
-                color: "gold"
-            }
 
         }
 
     }
+
 }
