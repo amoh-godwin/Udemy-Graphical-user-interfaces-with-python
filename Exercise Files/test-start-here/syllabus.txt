@@ -1,0 +1,17 @@
+welcome to first pyqt creating app you don know anything
+
+create two files
+ - main.py and main.qml
+
+import pyqt5 in main.py then load main.qml
+
+put in stuff in main.qml
+ - run the py and it calls main.qml
+
+all label text to main.qml
+
+add transitiions to label text
+
+done.
+
+Enjoy the course.

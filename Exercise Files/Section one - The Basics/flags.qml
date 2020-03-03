@@ -1,14 +1,10 @@
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-
+import QtQuick 2.10
+import QtQuick.Controls 2.3
 
 ApplicationWindow {
     visible: true
-    width: 800
+    width: 500
     height: 500
-    title: qsTr("Second Window")
-    color: "pink"
+    title: qsTr("Flags")
     flags: Qt.FramelessWindowHint | Qt.Window
-
-
 }
